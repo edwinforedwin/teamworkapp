@@ -18,7 +18,7 @@ RUN rm -rf /usr/share/nginx/html/*
 
 # Copy the build output from the previous stage
 # Note: Replace 'your-app-name' with the actual folder name in dist/
-COPY --from=build-step /app/dist/your-app-name/browser /usr/share/nginx/html
+COPY --from=build-step /app/dist/teamworkapp/browser /usr/share/nginx/html
 
 # Copy our custom nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
